@@ -1,0 +1,141 @@
+
+    <!DOCTYPE html>
+    <html lang="zh">
+    <head>
+    <meta charset="UTF-8">
+    <title>汕头大学防疫检测控制台</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--[if lt IE 9]>
+    <script>
+      document.createElement("article");
+      document.createElement("aside");
+      document.createElement("footer");
+      document.createElement("header");
+      document.createElement("main");
+      document.createElement("nav");
+      document.createElement("section");
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="banner">
+      <h1>汕头大学防疫检测控制台</h1>
+      <p>I am for everyone, everyone is for me</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="dianzisai.html">首页</a></li>
+        <li><a href="archive.html">实时数据</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>全部数据</h2>
+        <article>
+          <header>
+            <h3>下列数据包含所有用户</h3>
+            <strong id = 'small'>系统时间:2021年3月2日</strong>
+          </header>
+            <table id  = 'alldata' class = 'table'>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>体温</th>
+                    <th>健康码情况</th>
+                    <th>出入校</th>
+                    <th>时间 </th>
+                </tr>
+                <tr>  
+<td>1</td>
+<td>hongnansheng</td>
+<td>36.7</td>
+<td>0</td>
+<td>1</td>
+<td>12.03</td>
+</tr> 
+
+            </table>
+        </article>
+      </section>
+
+      <section>
+        <h2>异常情况</h2>
+        <article>
+          <header>
+            <h3>温度不达标</h3>
+            <p>有3位未处理</p>
+          </header>
+        <table>
+            <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>体温</th>
+                    <th>健康码情况</th>
+                    <th>出入校</th>
+                    <th>时间 </th>
+            </tr>
+            
+        </table>
+        </article>
+
+        <article>
+          <header>
+            <h3>健康码不达标</h3>
+            <p>目前仍有3位未处理</p>
+          </header>
+          <table>
+            <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>体温</th>
+                    <th>健康码情况</th>
+                    <th>出入校</th>
+                    <th>时间 </th>
+        </tr><tr>  
+<td>1</td>
+<td>hongnansheng</td>
+<td>36.7</td>
+<td class = 'unhealth'>0</td>
+<td>0</td>
+<td>1</td>
+<td>12.03</td>
+</tr> 
+
+            
+        </table>
+        </article>
+      </section>
+      <section float = right>
+         <h2 >日流量预览 </h2> 
+          <article>
+            <header>
+            </header>
+            <img src="aa.png" >
+          </article>
+      </section>
+    </main>
+
+    <aside>
+      <h2><a href="report.html">报告故障</a></h2>
+      <p>为了自身安全，请佩戴口罩</p>
+    </aside>
+
+    <footer>
+      <p>Footer Information</p>
+    </footer>
+  <script type="text/javascript">
+        function del(rowid){
+            var del=window.confirm("您确定删除吗？");
+            if(del){
+                location.href="delete.php?id="+rowid;
+            }else{
+
+            }
+        }
+    </script>
+  </body>
+</html>
+    

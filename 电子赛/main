@@ -1,0 +1,18 @@
+import dianzisai
+import conncet 
+"""
+这个将会是运行的主程序，需要完成更新html,与树莓派socket通讯并存数据到数据库，运行后还需运行flaskweb 以及ngrok
+"""
+while True:
+    conncet.datarefresh()
+    alldata = dianzisai.retrieve_database('all')
+    tempdata = dianzisai.retrieve_database('temp')
+    healthdata = dianzisai.retrieve_database('health')
+    (alldata_table , tempdata_table,healthdata_table) = dianzisai.generate_table(alldata,tempdata,healthdata)
+    html = dianzisai.generate_html(alldata_table , tempdata_table,healthdata_table)
+    r = open('test.html','w',encoding=('utf-8'))
+    r.write(html)
+    r.flush()
+    r.close()
+    time.sleep(60)
+
